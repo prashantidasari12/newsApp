@@ -1,0 +1,30 @@
+var app = angular.module("myApp",['ui.router']);
+app.config(function($stateProvider,$urlRouterProvider){
+    $stateProvider
+        .state('home',{
+            url:'/',
+            templateUrl:"./states/home/home.html",
+            controller:"homeCtrl"
+        })
+        .state('business',{
+            url:'/business',
+            templateUrl:"./states/business/business.html",
+            controller:"businessCtrl"
+        })
+        .state('tech',{
+            url:'/tech',
+            templateUrl:"./states/tech/tech.html",
+            controller:"techCtrl"
+        })
+        .state('science',{
+            url:'/science',
+            templateUrl:"./states/science/science.html",
+            controller:"scienceCtrl"
+        })
+        .state('health',{
+            url:'/health',
+            templateUrl:"./states/health/health.html",
+            controller:"healthCtrl"
+        })
+        $urlRouterProvider.otherwise('/');
+})

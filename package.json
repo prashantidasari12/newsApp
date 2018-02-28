@@ -4,13 +4,26 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
-    "angular": "^1.4.9",
-    "git": "^0.1.5",
-    "gulp": "^3.9.1"
+    "git": "^0.1.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@uirouter/angularjs": "^1.0.13",
+    "angular": "^1.6.9",
+    "angular-mocks": "^1.6.9",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-jshint": "^2.1.0",
+    "jasmine-core": "^2.3.4",
+    "jquery": "^3.2.1",
+    "jshint": "^2.9.5",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "ui-router": "^1.0.0-alpha.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf.js"
   },
   "author": "",
   "license": "ISC"

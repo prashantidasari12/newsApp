@@ -1,0 +1,16 @@
+<div class="container article-box">
+    <div class="today-news" ng-repeat= "science in getScienceHeadlines">
+        <h3 class="text-center">
+            {{science.source.name}}
+        </h3>
+        <h5 class="text-center">
+            {{science.title}}
+        </h5>
+        <div>
+            <img class="news-images img-responsive" id="news-article-image" ng-src="{{science.urlToImage}}">
+        </div>
+        <div class="text-left news-article">
+            {{science.description}}<a ng-href="{{science.url}}" target="_blank">...Read More</a>
+        </div>
+    </div>
+</div>

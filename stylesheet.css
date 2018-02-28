@@ -46,3 +46,39 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a {
     color:#ffffff;
 }
+
+.today-news {
+    border:2px solid #d6d7d8;
+    margin-top:7px;
+    margin-left:2px;
+    float:left;
+    width:30%;
+}
+
+.today-news-article {
+    border:2px solid #d6d7d8;
+    margin-top:15px;
+    margin-left:2px;
+    float:right;
+    width:320px;
+}
+
+.news-images {
+    max-width:300px;
+    max-height:500px;
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+.news-article {
+    padding:10px;
+}
+
+.article-box {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-left:4%;
+}

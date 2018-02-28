@@ -8,25 +8,44 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="newsApp.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/business.js"></script>
+        <script type="text/javascript" src="js/science.js"></script>
+        <script type="text/javascript" src="js/tech.js"></script>
+        <script type="text/javascript" src="js/health.js"></script>
+        <script type="text/javascript" src="./js/service.js"></script>
+        <script type="text/javascript" src="./test/spec.js"></script>
+
+
+
+
     </head>
-    <body>
-        <div class="news-header">
-            <div class="news-logoandsearch">
-                <span class="header-title">NEWS</span>
-                <input type="text" class="search-bar" placeholder="Find local news">
+    <body ng-app="myApp">
+        <header>
+            <div class="news-header">
+                <div class="news-logoandsearch">
+                    <span class="header-title">NEWS</span>
+                    <input type="text" class="search-bar" placeholder="Find local news">
+                </div>
             </div>
+            <div class="news-subheader">
+                <ul class="breadcrumb">
+                    <li><a ui-sref="home">Home</a></li>
+                    <li><a ui-sref="business">Business</a></li>
+                    <li><a ui-sref="tech">Tech</a></li>
+                    <li><a ui-sref="science">Science</a></li>
+                    <li><a ui-sref="health">Health</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <div ui-view>
+
         </div>
-        <div class="news-subheader">
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">World</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Tech</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Education</a></li>
-            </ul>
-        </div>
+        
     </body>
 </html>

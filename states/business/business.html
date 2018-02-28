@@ -1,0 +1,16 @@
+<div class="container article-box">
+    <div class="today-news" ng-repeat= "business in getBusinessNews">
+        <h3 class="text-center">
+            {{business.source.name}}
+        </h3>
+        <h5 class="text-center">
+            {{business.title}}
+        </h5>
+        <div>
+            <img class="news-images img-responsive" id="news-article-image" ng-src="{{business.urlToImage}}">
+        </div>
+        <div class="text-left news-article">
+            {{business.description}}<a ng-href="{{business.url}}" target="_blank">...Read More</a>
+        </div>
+    </div>
+</div>
